@@ -17,7 +17,7 @@ export const ProductMenuData = [
       "Business Teams",
       "Leadership Teams",
     ],
-    title: "Jlra",
+    title: "JIra",
     subTitle: "Flexible project managment",
     icon: <FaLocationArrow />,
   },
@@ -34,7 +34,7 @@ export const ProductMenuData = [
   },
   {
     sublink: ["Featured", "It Professionals"],
-    title: "Jlra Service Managment",
+    title: "JIra Service Managment",
     subTitle: "High Velocity Service Delivery",
     icon: <MdMiscellaneousServices />,
   },
@@ -46,7 +46,7 @@ export const ProductMenuData = [
   },
   {
     sublink: ["Featured", "Product Managers"],
-    title: "Jlra Product Discovery",
+    title: "JIra Product Discovery",
     subTitle: "Capture and priroties ideas",
     icon: <RiCompassDiscoverFill />,
   },
@@ -76,7 +76,7 @@ export const ProductMenuData = [
   },
   {
     sublink: ["Leadership Teams"],
-    title: "Jlra Align",
+    title: "JIra Align",
     subTitle: "Collabrative code repos",
     icon: <TbBoxAlignTopLeftFilled />,
   },

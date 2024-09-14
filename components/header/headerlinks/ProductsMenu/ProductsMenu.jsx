@@ -3,12 +3,8 @@ import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-import FeaturedLInks from "./sublinks/FeaturedLInks";
-import DeveloperLink from "./sublinks/DeveloperLink";
-import ProductManager from "./sublinks/ProductManager";
-import ItPro from "./sublinks/ItPro";
-import BusinessTeams from "./sublinks/BusinessTeams";
-import LeaderShip from "./sublinks/LeaderShip";
+
+import Sublink from "./sublinks/Sublink";
 const ProductsMenu = ({ mouseEnter, mouseLeave }) => {
   // -------------------------------------------------
   const sublinks = [
@@ -34,7 +30,6 @@ const ProductsMenu = ({ mouseEnter, mouseLeave }) => {
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
     >
-      <div className="w-full h-3 bg-transparent"></div>
       <div
         className="w-full h-auto product_content overflow-hidden  bg-white rounded-2xl flex shadow-xl shadow-slate-400 "
         title={activeLink}
@@ -80,18 +75,7 @@ const ProductsMenu = ({ mouseEnter, mouseLeave }) => {
             </Link>
           </ul>
           <div className="sub-products  w-full  h-full relative">
-            {activeLink == "Featured" && <FeaturedLInks title={activeLink} />}
-            {activeLink == "Developers" && <DeveloperLink title={activeLink} />}
-            {activeLink == "Product Managers" && (
-              <ProductManager title={activeLink} />
-            )}
-            {activeLink == "It Professionals" && <ItPro title={activeLink} />}
-            {activeLink == "Business Teams" && (
-              <BusinessTeams title={activeLink} />
-            )}
-            {activeLink == "Leadership Teams" && (
-              <LeaderShip title={activeLink} />
-            )}
+            <Sublink title={activeLink} />
           </div>
         </div>
       </div>
