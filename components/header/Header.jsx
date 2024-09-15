@@ -35,7 +35,7 @@ const Header = () => {
   // --------------------------------------------
   return (
     <div className="w-full  font-charlie 0 fixed z-50 bg-[white]  ">
-      <div className="min-xl:container  bg-white   w-full h-full mx-auto text-2xl flex max-lg:px-5 max-xl:py-4 max-xl:px-10 justify-between items-center  px-[11rem]  max-2xl:px-[4.5rem]  ">
+      <div className="max-xl:container  bg-white   w-full h-full mx-auto text-2xl flex max-lg:px-5 max-xl:py-4 max-xl:px-10 justify-between items-center  px-[11rem]  max-2xl:px-[4.5rem]  ">
         <div>
           <Image
             src={compLogo}

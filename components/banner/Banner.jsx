@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="py-[4.5rem] w-full h-full overflow-hidden ">
       <div className="w-full py-[6.6rem] max-xl:py-36  bg-[#0065FF]  relative overflow-hidden">
-        <div className="max-xl:container border-2 border-red-500  mx-auto">
+        <div className="max-xl:container  mx-auto">
           <h1 className="text-[3rem]    relative z-10 text-white text-center font-extrabold tracking-tighter ">
             Put your mission into motion
           </h1>
