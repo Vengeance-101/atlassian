@@ -5,7 +5,12 @@ import { useState } from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 
 import Sublink from "./sublinks/Sublink";
-const ProductsMenu = ({ mouseEnter, mouseLeave }) => {
+const ProductsMenu = ({
+  mouseEnter,
+  mouseLeave,
+  handleActiveLink,
+  activeSub,
+}) => {
   // -------------------------------------------------
   const sublinks = [
     { title: "Featured" },
@@ -18,11 +23,11 @@ const ProductsMenu = ({ mouseEnter, mouseLeave }) => {
   // -------------------------------------------------
 
   const active = true;
-  const [activeLink, setactiveLink] = useState("Featured");
-  const handleMouseEnter = (sublink) => {
-    setactiveLink(sublink);
-    console.log(activeLink);
-  };
+  // const [activeLink, setactiveLink] = useState("Featured");
+  // const handleMouseEnter = (sublink) => {
+  //   setactiveLink(sublink);
+  //   console.log(activeLink);
+  // };
 
   return (
     <div
@@ -30,9 +35,10 @@ const ProductsMenu = ({ mouseEnter, mouseLeave }) => {
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
     >
+      <div className="w-full py-1"></div>
       <div
         className="w-full h-auto product_content overflow-hidden  bg-white rounded-2xl flex shadow-xl shadow-slate-400 "
-        title={activeLink}
+        title={activeSub}
       >
         <div className="main-products flex w-full h-auto">
           <ul className="flex flex-col items-start bg-[#F8F8F8]  py-12">
@@ -45,16 +51,16 @@ const ProductsMenu = ({ mouseEnter, mouseLeave }) => {
                   <button
                     href="#"
                     className={` sublink-anchor   w-full transition-all duration-300 ease-in-out  text-sm pl-2   py-3 ${
-                      sublink.title == activeLink && active
+                      sublink.title == activeSub && active
                         ? "bg-white"
                         : "bg-transparent"
                     }  ${sublink.title}  ${
-                      active && sublink.title == activeLink
+                      active && sublink.title == activeSub
                         ? "text-[#1868DB]"
                         : "text-black"
                     }  `}
                     onMouseEnter={() => {
-                      handleMouseEnter(sublink.title);
+                      handleActiveLink(sublink.title);
                     }}
                   >
                     <span className="w-full text-left inline-flex mr-20">
@@ -75,7 +81,7 @@ const ProductsMenu = ({ mouseEnter, mouseLeave }) => {
             </Link>
           </ul>
           <div className="sub-products  w-full  h-full relative">
-            <Sublink title={activeLink} />
+            <Sublink title={activeSub} />
           </div>
         </div>
       </div>

@@ -35,7 +35,7 @@ const Header = () => {
   // --------------------------------------------
   return (
     <div className="w-full  font-charlie 0 fixed z-50 bg-[white]  ">
-      <div className="min-xl:container  bg-white  w-full h-full mx-auto text-2xl flex max-lg:px-5 max-xl:py-4 max-xl:px-10 justify-between items-center  px-[11rem]  max-2xl:px-[4.5rem]  ">
+      <div className="min-xl:container  bg-white   w-full h-full mx-auto text-2xl flex max-lg:px-5 max-xl:py-4 max-xl:px-10 justify-between items-center  px-[11rem]  max-2xl:px-[4.5rem]  ">
         <div>
           <Image
             src={compLogo}
@@ -49,6 +49,8 @@ const Header = () => {
           <HeaderLinks
             mouseEnter={handleMouseEnter}
             mouseLeave={handleMouseleave}
+            handleActiveLink={handleActiveLink}
+            activeSub={activeSub}
           />
         </div>
         <div className="flex gap-5 items-center">
@@ -88,9 +90,9 @@ const Header = () => {
       <div
         className={` ${
           toggle
-            ? " max-xl:opacity-[100] max-xl-pointer-events-auto  right-3 max-sm:right-0 "
-            : "opacity-0 pointer-events-none right-[-38%]"
-        }   absolute  max-xl:w-[36%] max-lg:w-[37%] h-auto py-2 max-sm:w-[100%] max-md:w-[60%] transition-all duration-300 ease-in-out max-sm:py-0   z-[50]   top-[100%]  max-2xl:opacity-0 `}
+            ? "   right-3 max-sm:right-0 "
+            : " right-[-38%] max-sm:right-[-100%]"
+        }   absolute  max-xl:w-[36%] max-lg:w-[37%] h-auto py-2 max-sm:w-[100%] max-md:w-[38%] transition-all duration-300 ease-in-out max-sm:py-0   z-[50]   top-[100%]  max-xl:opacity-[100] opacity-0 pointer-events-none max-xl:pointer-events-auto`}
       >
         <div className="bg-white w-full h-full relative overflow-hidden  max-md:pt-0 px-3 shadow-2xl py-11   rounded-[1.2rem] max-sm:rounded-none ">
           <div

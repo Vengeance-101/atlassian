@@ -3,7 +3,12 @@ import Link from "next/link";
 import React from "react";
 import ProductsMenu from "./ProductsMenu/ProductsMenu";
 import { PiCaretDownDuotone } from "react-icons/pi";
-const HeaderLinks = ({ mouseEnter, mouseLeave }) => {
+const HeaderLinks = ({
+  mouseEnter,
+  mouseLeave,
+  handleActiveLink,
+  activeSub,
+}) => {
   const navlink = [
     { title: "Products" },
     { title: "Teams" },
@@ -28,7 +33,12 @@ const HeaderLinks = ({ mouseEnter, mouseLeave }) => {
               <PiCaretDownDuotone className="arrow transition-all duration-300 ease-in-out" />
             </button>
             {links.title == "Products" && (
-              <ProductsMenu mouseEnter={mouseEnter} mouseLeave={mouseLeave} />
+              <ProductsMenu
+                mouseEnter={mouseEnter}
+                mouseLeave={mouseLeave}
+                handleActiveLink={handleActiveLink}
+                activeSub={activeSub}
+              />
             )}
           </li>
         );
