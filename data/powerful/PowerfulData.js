@@ -5,54 +5,54 @@ import { RiCompassDiscoverFill } from "react-icons/ri";
 import { TbBoxAlignTopLeftFilled } from "react-icons/tb";
 import { MdSignalWifiStatusbar3Bar } from "react-icons/md";
 import { SiOpsgenie } from "react-icons/si";
-export const PowerData = () => [
+export const PowerData = [
   {
     title: "JIra",
     subtitle:
       "Plan, track, and deliver your biggest ideas together with Jira - the project management tool for all teams.",
-    bnt: "Learn More",
+    btn: "Learn More",
     icon: <FaLocationArrow />,
   },
   {
     title: "JIra Align",
     subtitle:
       "connect business and technology teams to align strategy with outcomes at enterprise scale.",
-    bnt: "Learn More",
+    btn: "Learn More",
     icon: <TbBoxAlignTopLeftFilled />,
   },
   {
     title: "JIra Servive Management",
     subtitle:
       "Collaborate at high-velocity, respond to business changes and deliver great customer and employee service experiences fast.",
-    bnt: "Learn More",
+    btn: "Learn More",
     icon: <MdMiscellaneousServices />,
   },
   {
     title: "JIra Product Delivery",
     subtitle:
       "Organize and prioritize ideas, share product roadmaps, and connect business and tech teams, all in Jira.",
-    bnt: "Learn More",
+    btn: "Learn More",
     icon: <RiCompassDiscoverFill />,
   },
   {
     title: "Status Page",
     subtitle:
       "Incidents happen. Keep your users informed and ditch the flood of support emails during downtime.",
-    bnt: "Learn More",
+    btn: "Learn More",
     icon: <MdSignalWifiStatusbar3Bar />,
   },
   {
     title: "Opsgenie",
     subtitle:
       "Notify the right people at the right time with powerful incident alerting and on-call schedules.",
-    bnt: "Learn More",
+    btn: "Learn More",
     icon: <SiOpsgenie />,
   },
   {
     title: "Rovo",
     subtitle:
       "Harness the power of AI to transform company-wide data into actionable insights, empowering teams to achieve more.",
-    bnt: "Learn More",
+    btn: "Learn More",
     icon: <TbTruckDelivery />,
   },
 ];

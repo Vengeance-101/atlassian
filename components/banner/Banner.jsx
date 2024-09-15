@@ -1,5 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import Button from "@/lib/button/Button";
+
 const Banner = () => {
   return (
     <div className="py-[4.5rem] w-full h-full overflow-hidden ">
@@ -39,9 +41,7 @@ const Banner = () => {
           productivity and scale your organization.
         </p>
         <p className="text-center mt-7">
-          <button className="outline-none border-2 border-[#0065FF]  rounded-lg py-2  px-5 text-base text-[#0065FF] hover:bg-[#EBECF0] font-extrabold transition-all duration-300 ease-in-out ">
-            Explore our platform
-          </button>
+          <Button>Explore our platform</Button>
         </p>
       </div>
     </div>

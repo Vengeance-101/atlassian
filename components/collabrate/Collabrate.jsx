@@ -1,17 +1,14 @@
-import { PowerData } from "@/data/powerful/PowerfulData";
-import Button from "@/lib/button/Button";
 import React from "react";
-const PowerFull = () => {
+import Button from "@/lib/button/Button";
+import { colabrate } from "@/data/collaborate/CollabrateData";
+const Collabrate = () => {
   return (
     <div className="px-[11rem]  h-auto ">
-      <h1 className="text-center text-[2.5rem] py-5 font-extrabold text-black">
-        Powerful products for every team
-      </h1>
       <p className="text-left w-full text-2xl py-5 font-extrabold text-black">
-        Powerful products for every team
+        Collaborate
       </p>
       <div className="grid grid-cols-2 gap-12 w-full h-auto py-10">
-        {PowerData.map((item) => {
+        {colabrate.map((item) => {
           return (
             <div key={item.title}>
               <div className="flex items-center w-full py-1 justify-start gap-3 text-4xl ">
@@ -32,4 +29,4 @@ const PowerFull = () => {
   );
 };
 
-export default PowerFull;
+export default Collabrate;

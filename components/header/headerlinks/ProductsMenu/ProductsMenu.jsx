@@ -1,9 +1,7 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { useState } from "react";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-
 import Sublink from "./sublinks/Sublink";
 const ProductsMenu = ({
   mouseEnter,
@@ -23,11 +21,6 @@ const ProductsMenu = ({
   // -------------------------------------------------
 
   const active = true;
-  // const [activeLink, setactiveLink] = useState("Featured");
-  // const handleMouseEnter = (sublink) => {
-  //   setactiveLink(sublink);
-  //   console.log(activeLink);
-  // };
 
   return (
     <div
