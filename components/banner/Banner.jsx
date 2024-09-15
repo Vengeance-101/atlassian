@@ -4,12 +4,15 @@ const Banner = () => {
   return (
     <div className="py-[4.5rem] w-full h-full overflow-hidden ">
       <div className="w-full py-[6.6rem] max-xl:py-36  bg-[#0065FF]  relative overflow-hidden">
-        <h1 className="text-[3rem]   relative z-10 text-white text-center font-extrabold tracking-tighter ">
-          Put your mission into motion
-        </h1>
-        <p className=" text-center  relative z-10 text-white text-[1.2rem] font-light  mt-5">
-          Atlassian’s products accelerate your journey from ideation to reality.
-        </p>
+        <div className="max-xl:container border-2 border-red-500  mx-auto">
+          <h1 className="text-[3rem]    relative z-10 text-white text-center font-extrabold tracking-tighter ">
+            Put your mission into motion
+          </h1>
+          <p className=" text-center  relative z-10 text-white text-[1.2rem] font-light  mt-5">
+            Atlassian’s products accelerate your journey from ideation to
+            reality.
+          </p>
+        </div>
         <Image
           src="/bannerLeft.png"
           width={680}
