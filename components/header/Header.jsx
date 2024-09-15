@@ -94,8 +94,6 @@ const Header = () => {
         handleActiveLink={handleActiveLink}
         title={activeSub}
       />
-
-      
     </div>
   );
 };
