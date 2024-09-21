@@ -19,9 +19,9 @@ export default function LoadingScreen({ setContentLoad }) {
             opacity: 0,
           })
             .to(loadingScreen.current, {
+              height: 0,
               delay: 0.2,
-              duration: 0.2,
-              opacity: 0,
+              duration: 0.5,
               ease: "power2.out",
             })
             .to(loadingScreen.current, {
@@ -42,12 +42,12 @@ export default function LoadingScreen({ setContentLoad }) {
   return (
     <div
       ref={loadingScreen}
-      className="fixed  h-full w-full flex flex-col items-center justify-center bg-black  z-[999] transition-opacity duration-700"
+      className="fixed  h-full w-full  bg-white z-[999] transition-opacity duration-700"
     >
       <div
         ref={progressRef}
-        className=" bg-white transition-all w-full  duration-300 ease-out"
-        style={{ height: `${progress}%` }}
+        className=" bg-black transition-all  h-full duration-300 ease-out"
+        style={{ width: `${progress}%` }}
       ></div>
 
       {/* Progress Text */}
