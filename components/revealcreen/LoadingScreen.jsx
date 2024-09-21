@@ -39,7 +39,7 @@ export default function LoadingScreen({ setContentLoad }) {
         }
         return oldProgress + 1;
       });
-    }, 30); // Adjust interval for loading speed
+    }, 25); // Adjust interval for loading speed
     return () => clearInterval(interval);
   }, []);
 
