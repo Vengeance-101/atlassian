@@ -1,5 +1,32 @@
-button{
+button {
   outline: none;
-  
 }
-@import "../module/header"
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ff000000;
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  width: 30px
+}
+
+
+
+@import "lenis/dist/lenis.css";
+
+@import "../module/header";

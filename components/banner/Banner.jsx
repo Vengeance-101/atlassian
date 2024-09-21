@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Button from "@/lib/button/Button";
-
 const Banner = () => {
   return (
     <div className="py-[4.5rem] w-full h-full overflow-hidden ">
