@@ -20,7 +20,7 @@ export default function LoadingScreen({ setContentLoad }) {
           })
             .to(loadingScreen.current, {
               height: 0,
-              delay: 0.2,
+              delay: 0.1,
               duration: 0.5,
               ease: "power2.out",
             })
@@ -35,7 +35,7 @@ export default function LoadingScreen({ setContentLoad }) {
         }
         return oldProgress + 1;
       });
-    }, 15); // Adjust interval for loading speed
+    }, 25); // Adjust interval for loading speed
     return () => clearInterval(interval);
   }, []);
 
