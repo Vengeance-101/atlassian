@@ -51,8 +51,13 @@ export default function LoadingScreen({ setContentLoad }) {
       ></div>
 
       {/* Progress Text */}
-      <div className="text-[8rem] font-bold loading-counter text-white mix-blend-difference absolute top-[50%] left-[50%]  translate-x-[-50%]  translate-y-[-50%] ">
-        {progress}%
+      <div className="text-[8rem] font-bold loading-counter  z-[600] blur-3xl gap-2 text-[#ffffffb7] mix-blend-difference absolute top-[50%] left-[50%]  translate-x-[-50%]  translate-y-[-50%] ">
+        {progress}
+        <span className="text-3xl">%</span>
+      </div>
+      <div className="text-[8rem] font-bold loading-counter  z-[799] gap-2 text-white drop-shadow-xl absolute top-[50%] left-[50%]  translate-x-[-50%]  translate-y-[-50%] ">
+        {progress}
+        <span className="text-3xl">%</span>
       </div>
     </div>
   );
